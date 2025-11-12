@@ -79,7 +79,7 @@ generator_pipeline = None
 if use_generator:
     with st.spinner("Loading generator model (this may take a bit)..."):
         # Flan-T5-small or you can change to other text2text model
-        generator_pipeline = pipeline("text2text-generation", model="google/flan-t5-small", device=-1)
+        generator_pipeline = pipeline("text2text-generation", model="google/flan-t5-base", device=-1)
 
 # ---------------------------
 # Upload PDFs
